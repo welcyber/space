@@ -1,0 +1,555 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Outfit";
+    
+}
+
+
+
+body{
+    color: white;
+    overflow-x: hidden;
+
+}
+
+.full{
+    width: 100%;
+    height: 100vh;
+    z-index: -2222;
+    background-size: cover;
+    position: fixed;
+    background: linear-gradient(40deg, black, rgb(15, 25, 33), rgb(52, 52, 59));
+    backdrop-filter: blur(40px);
+        animation: grad infinite linear forwards;
+    animation-duration: 3s;
+
+}
+
+@keyframes grad {
+    10%{    background: linear-gradient(230deg, black, rgb(43, 33, 33) 50%, rgb(41, 41, 53));
+}
+    20%{    background: linear-gradient(300deg, black, rgb(17, 25, 35) 50%, rgb(52, 52, 59));
+}
+    30%{    background: linear-gradient(150deg, black, rgb(18, 23, 24) 50%, rgb(52, 52, 59));
+}
+    60%{    background: linear-gradient(45deg, rgba(64, 56, 56, 0.92),50% rgb(28, 30, 45), rgb(52, 52, 59));
+}
+    100%{    background: linear-gradient(85deg, black, rgb(40, 32, 50) 50%, rgb(52, 52, 59));
+}
+}
+
+
+
+
+h1{
+    font-size: 50px;
+    text-align: center;
+    padding: 80px;
+}
+
+h2{
+    font-size: 30px;
+    font-family: "momo trust display";
+}
+
+.text p{
+    color: rgba(255, 255, 255, 0.73);
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0 20px 30px;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    background-color: rgba(123, 117, 117, 0);
+    backdrop-filter: blur(100px);
+    overflow: hidden;
+    
+}
+
+.logo{
+    font-size: 30px;
+    font-family: "monoton";
+    color: aliceblue;
+    
+    
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+ 
+    align-items: center;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(252, 251, 251);
+    padding: 40px 30px;
+    width: 100%;
+    height: 100%;
+  
+
+}
+
+nav ul li a:hover{
+    background-color: rgba(8, 9, 9, 0.309); 
+       
+}
+
+.video{
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+ 
+}
+
+.video-title{
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    text-align: center;
+}
+
+.video-title h3{
+    font-size: 70px;
+    font-family: "momo trust display";
+        animation: fadeup 5s cubic-bezier(0.35, 1.53, 0.69, 0.6) 2s;
+        transform: translateY(600px);
+       animation-fill-mode: forwards;
+
+}
+
+.video-title p{
+        animation: fadeup 5s cubic-bezier(0.67,-0.74, 0, 0.95) 2.3s forwards   ;
+        transform: translateY(400px);
+}
+
+@keyframes fadeup {
+
+100%{transform: translateY(0) scale(1);}
+    
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------ */
+
+#ship{
+    margin-top: -4px;
+    padding: 0 200px;
+    padding-bottom: 90px;
+    overflow: hidden;
+}
+
+#ship h1{
+    text-align: center;
+    font-size: 50px;
+    color: aliceblue;
+    padding: 80px 0 40px 0;
+}
+#ship .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(151, 145, 145, 0.274);
+    backdrop-filter: blur(30px);
+    padding: 60px 20px;
+    border-radius: 30px;
+            animation: fadeup 5s cubic-bezier(0.19, 1, 0.22, 1) forwards  ;
+        transform: translateY(440px);
+
+
+
+    
+}
+
+#ship img{
+    animation: fade 2s cubic-bezier(0.075, 0.82, 0.165, 1) 2s forwards ;
+    filter: blur(100px);
+    opacity: 0;
+
+}
+
+#ship .text{
+width: 50%;
+color: aliceblue;
+animation: fade 2s cubic-bezier(0.075, 0.82, 0.165, 1) 3s forwards  ;
+filter: blur(100px);
+opacity: 0;
+
+}
+
+#ship .text h2{
+    padding-bottom: 15px;
+    
+}
+
+@keyframes fade {
+   
+    100%{filter: blur(0); opacity: 1;}
+}
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+.housesystem{
+    color: rgb(251, 251, 251);
+}
+
+#solar-system{
+    text-align: center;
+    padding: 20px 0 0px 0;
+    
+    
+}
+
+.solarsystem{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.solarsystem .text{
+    width: 600px;
+        animation: fade 2s cubic-bezier(0.075, 0.82, 0.165, 1) forwards  ;
+          animation-timeline: view();
+    animation-range: entry 10% cover 50%;
+
+filter: blur(100px);
+opacity: 0;
+}
+
+.solarsystem .text h2{
+    padding-bottom: 15px;
+}
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------------- */
+
+.housesystem{
+    display: grid;
+    grid-template-columns: 500px 500px;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+
+}
+.plenet{
+
+
+height: 730px;
+padding: 40px 50px;
+display: grid;
+justify-content: center;
+align-content: space-around;
+    background-color: rgba(151, 145, 145, 0.274);
+    backdrop-filter: blur(30px);
+   border-radius: 290px;
+   border-bottom-left-radius: 0px;
+   border-bottom-right-radius: 0px;
+   
+            animation: fadeup 10s cubic-bezier(0.19, 1, 0.22, 1) forwards  ;
+        transform: translateY(440px) scale(-1);
+    animation-timeline: view();
+    animation-range: start 30% cover 60%;
+}
+
+
+
+.plenet img{
+    width: 100%;
+    animation: rotate 50s infinite linear forwards;
+
+}
+
+
+@keyframes rotate {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
+
+
+
+.plenet .text{
+    width: 400px;
+    text-align: center;
+}
+
+.plenet h2{
+    font-size: 50px;
+    padding: 10px 0;
+}
+
+.plenet p{
+    text-align: justify;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------------------------------------- */
+
+.sunmoon #content{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.sunmoon img{
+        animation: rotate 50s infinite linear forwards;
+
+}
+
+.sun, .moon{
+    background-color: rgba(151, 145, 145, 0.274);
+    backdrop-filter: blur(30px);
+    width: 390px;
+    height: auto;
+    padding: 30px;
+    overflow: hidden;
+    text-align: center;
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+    
+
+    
+}
+
+.sun{
+                    animation: right 5s cubic-bezier(0.19, 1, 0.22, 1) forwards  ;
+    animation-timeline: view();
+    animation-range: start 60% cover 60%;
+    transform: translateX(-200%);
+
+}
+
+.moon{
+                        animation: left 5s cubic-bezier(0.19, 1, 0.22, 1) forwards  ;
+    animation-timeline: view();
+    animation-range: start 60% cover 60%;
+    transform: translateX(200%);
+
+
+}
+
+.sunmoon h2{
+    padding: 30px  0 20px 0;
+}
+
+
+
+/* =---------------------------------------=-=-=-=-=-=-================================================================== */
+
+
+#universe img{
+    width: 300px;
+    height: 250px;
+box-shadow: 1px 1px 100px rgba(109, 98, 98, 0.622);  
+  
+
+}
+
+#universe .text{
+    width: 50%;
+}
+
+#universe .text h2{
+    padding-bottom: 10px;
+}
+
+
+
+
+
+.universe, .universer{
+    display: flex;
+    align-items: center;
+    background-color: rgba(151, 145, 145, 0.274);
+    backdrop-filter: blur(30px);
+    width: 63%;
+    height: 330px;
+    gap: 40px;
+    padding: 40px 0;
+    margin-bottom: 50px;
+    
+}
+
+.universe{
+    justify-content: flex-start;
+    padding-left: 40px;
+    float: right;
+                animation: left 5s cubic-bezier(0.19, 1, 0.22, 1) forwards  ;
+    animation-timeline: view();
+    animation-range: start 10% cover 30%;
+    transform: translateX(100%) scale(0);
+    
+}
+
+
+
+.universer{
+    justify-content: flex-end;
+    padding-right: 40px;
+                animation: right 5s cubic-bezier(0.19, 1, 0.22, 1) forwards  ;
+    animation-timeline: view();
+    animation-range: start 10% cover 30%;
+    transform: translateX(-100%) scale(0);
+}
+
+
+
+.universer h2{
+    text-align: right;
+}
+
+#universe p{
+    text-align:justify;
+}
+
+
+
+@keyframes left {
+   100%{transform: translateX(0) scale(1);} 
+}
+
+@keyframes right{
+    100%{transform: translateX(0) scale(1);}
+}
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------- */
+
+#about{
+    display: flex;
+    align-items: top;
+    justify-content: space-around;
+    background-color: rgba(189, 177, 177, 0.221);
+    backdrop-filter: blur(40px);
+    padding: 50px 0;
+    clear: both;
+    
+}
+
+.logo p{
+    font-size: 10px;
+    width: 280px;
+    text-align: justify;
+    padding-bottom: 40px;
+        color: rgba(255, 255, 255, 0.536);
+
+}
+
+ul{
+    list-style-type: none;
+}
+
+#about a{
+    color: white;
+    text-decoration: none;
+}
+
+#about ul ol{
+    font-size: 25px;
+    padding-bottom: 10px;
+    font-family: "momo trust display";
+}
+
+#about ul li a{
+    color: rgba(255, 255, 255, 0.536);
+    height: auto;
+    transition: 0.4s;
+  
+}
+
+#about ul li a:hover{
+    color: white;
+}
+
+.app{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    justify-content: left;
+}
+
+.app a{
+    font-size: 20px;
+    background-color: rgba(28, 22, 22, 0.353);
+    padding: 10px;
+    backdrop-filter: blur(30px);
+    transition: 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.app a:hover{
+    background-color: rgba(148, 150, 153, 0.682);
+    backdrop-filter: blur(40px);
+}
+
+.create{
+padding: 2% 5% ;
+display: flex;
+align-items: center;
+justify-content: space-between;
+background-color: rgba(22, 20, 20, 0.354);
+backdrop-filter: blur(40px);
+z-index: 2;
+}
+
+.create div{
+display: flex;
+gap: 40px;
+}
+
+.create p{
+    color: rgba(255, 255, 255, 0.626);
+
+    transition: 0.2s;
+}
+
+.create p:hover{
+    color: white;
+}
+
+/* ===================================================================================================================== */
+
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+::-webkit-scrollbar-track {
+  background:linear-gradient(to top, black, rgb(167, 148, 148), rgb(55, 55, 57));
+}
+::-webkit-scrollbar-thumb {
+  background: #0000007b;
+  border-radius: 10px;
+  backdrop-filter: blur(30px);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
